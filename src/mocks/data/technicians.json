@@ -1,0 +1,32 @@
+[
+  {
+    "id": "tech-anna",
+    "name": "Anna Patel",
+    "photo": "https://i.pravatar.cc/150?img=32",
+    "skills": ["Electrical", "Diagnostics"],
+    "status": "AVAILABLE",
+    "todayLoad": 3,
+    "nextAvailable": "2024-04-05T15:00:00.000Z",
+    "certifications": ["ASE Master Technician", "Hybrid Systems"]
+  },
+  {
+    "id": "tech-jon",
+    "name": "Jon Fernandez",
+    "photo": "https://i.pravatar.cc/150?img=45",
+    "skills": ["Brakes", "Suspension"],
+    "status": "BUSY",
+    "todayLoad": 5,
+    "nextAvailable": "2024-04-05T18:30:00.000Z",
+    "certifications": ["ASE Brakes"]
+  },
+  {
+    "id": "tech-riley",
+    "name": "Riley Chen",
+    "photo": "https://i.pravatar.cc/150?img=18",
+    "skills": ["Roadside", "Diagnostics"],
+    "status": "AVAILABLE",
+    "todayLoad": 2,
+    "nextAvailable": "2024-04-05T14:15:00.000Z",
+    "certifications": ["EV Systems"]
+  }
+]

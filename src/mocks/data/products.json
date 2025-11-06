@@ -1,0 +1,30 @@
+[
+  {
+    "id": "prd-axle-grease",
+    "sku": "AXL-4432",
+    "name": "Axle Grease Compound",
+    "category": "Consumables",
+    "unit": "tube",
+    "costPrice": 9.5,
+    "sellPrice": 18,
+    "tax": 0.07,
+    "stockByBranch": { "br-nyc": 54, "br-nwk": 28 },
+    "reorderLevel": 15,
+    "supplier": "Lube & Co",
+    "status": "ACTIVE"
+  },
+  {
+    "id": "prd-brake-pad",
+    "sku": "BRK-2210",
+    "name": "Premium Brake Pad Set",
+    "category": "Parts",
+    "unit": "set",
+    "costPrice": 80,
+    "sellPrice": 145,
+    "tax": 0.07,
+    "stockByBranch": { "br-nyc": 12, "br-nwk": 4 },
+    "reorderLevel": 6,
+    "supplier": "BrakeRight",
+    "status": "ACTIVE"
+  }
+]

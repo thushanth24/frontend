@@ -1,0 +1,57 @@
+[
+  {
+    "id": "appt-s-1001",
+    "ticketNo": "SRV-1001",
+    "type": "SERVICE",
+    "branchId": "br-nyc",
+    "customer": { "id": "cust-001", "name": "Jordan Miles", "phone": "+1 212-555-0789", "email": "jordan.miles@example.com" },
+    "vehicle": {
+      "id": "veh-001",
+      "customerId": "cust-001",
+      "make": "Tesla",
+      "model": "Model 3",
+      "year": 2022,
+      "plate": "EV-2022",
+      "vin": "5YJ3E1EA7KF317000",
+      "mileageHistory": [
+        { "at": "2024-03-01T00:00:00.000Z", "value": 15200 },
+        { "at": "2024-01-10T00:00:00.000Z", "value": 13650 }
+      ]
+    },
+    "requestedServices": [{ "id": "srv-oil", "name": "Full Synthetic Oil Change" }],
+    "preferredTime": "2024-04-06T14:30:00.000Z",
+    "assignedTech": null,
+    "status": "NEW",
+    "notes": "Customer waiting",
+    "createdAt": "2024-04-04T15:00:00.000Z"
+  },
+  {
+    "id": "appt-s-1002",
+    "ticketNo": "SRV-1002",
+    "type": "SERVICE",
+    "branchId": "br-nyc",
+    "customer": { "id": "cust-002", "name": "Nia Patel", "phone": "+1 973-555-2211", "email": "nia.patel@example.com" },
+    "vehicle": {
+      "id": "veh-002",
+      "customerId": "cust-002",
+      "make": "Ford",
+      "model": "F-150",
+      "year": 2019,
+      "plate": "TRK-8841",
+      "vin": "1FTEW1E43KKE12345",
+      "mileageHistory": [
+        { "at": "2024-02-20T00:00:00.000Z", "value": 48800 },
+        { "at": "2023-11-11T00:00:00.000Z", "value": 45210 }
+      ]
+    },
+    "requestedServices": [
+      { "id": "srv-brake", "name": "Brake Pad Replacement" },
+      { "id": "srv-oil", "name": "Full Synthetic Oil Change" }
+    ],
+    "preferredTime": "2024-04-05T13:00:00.000Z",
+    "assignedTech": { "id": "tech-jon", "name": "Jon Fernandez" },
+    "status": "ASSIGNED",
+    "notes": "Brake squeal on downhill",
+    "createdAt": "2024-04-03T12:00:00.000Z"
+  }
+]
