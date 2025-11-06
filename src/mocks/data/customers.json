@@ -1,0 +1,18 @@
+[
+  {
+    "id": "cust-001",
+    "name": "Jordan Miles",
+    "phone": "+1 212-555-0789",
+    "email": "jordan.miles@example.com",
+    "address": "245 W 38th St, New York, NY",
+    "preferredContact": "EMAIL"
+  },
+  {
+    "id": "cust-002",
+    "name": "Nia Patel",
+    "phone": "+1 973-555-2211",
+    "email": "nia.patel@example.com",
+    "address": "88 Raymond Blvd, Newark, NJ",
+    "preferredContact": "PHONE"
+  }
+]

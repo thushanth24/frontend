@@ -1,0 +1,28 @@
+[
+  {
+    "id": "br-nyc",
+    "name": "Midtown Service Hub",
+    "code": "NYC01",
+    "address": { "street": "123 5th Ave", "city": "New York", "postal": "10010" },
+    "phone": "+1 212-555-0175",
+    "email": "midtown@autoops.test",
+    "manager": { "id": "emp-002", "name": "Morgan Lee" },
+    "techCount": 8,
+    "workingHours": "Mon-Sat 8:00-18:00",
+    "servicesOffered": ["srv-oil", "srv-brake", "srv-detail"],
+    "status": "ACTIVE"
+  },
+  {
+    "id": "br-nwk",
+    "name": "Newark Logistics",
+    "code": "NJ02",
+    "address": { "street": "44 Ironbound Rd", "city": "Newark", "postal": "07105" },
+    "phone": "+1 973-555-0134",
+    "email": "newark@autoops.test",
+    "manager": null,
+    "techCount": 5,
+    "workingHours": "Mon-Fri 9:00-17:00",
+    "servicesOffered": ["srv-oil", "srv-tire"],
+    "status": "ACTIVE"
+  }
+]

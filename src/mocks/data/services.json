@@ -1,0 +1,32 @@
+[
+  {
+    "id": "srv-oil",
+    "name": "Full Synthetic Oil Change",
+    "code": "OIL-001",
+    "category": "Maintenance",
+    "description": "Replace engine oil and filter, perform fluid top-off",
+    "standardDurationMin": 60,
+    "baseLaborCost": 120,
+    "status": "ACTIVE"
+  },
+  {
+    "id": "srv-brake",
+    "name": "Brake Pad Replacement",
+    "code": "BRK-110",
+    "category": "Repairs",
+    "description": "Replace front brake pads and inspect rotors",
+    "standardDurationMin": 120,
+    "baseLaborCost": 260,
+    "status": "ACTIVE"
+  },
+  {
+    "id": "srv-detail",
+    "name": "Complete Detail",
+    "code": "DTL-210",
+    "category": "Detailing",
+    "description": "Interior and exterior detailing package",
+    "standardDurationMin": 180,
+    "baseLaborCost": 210,
+    "status": "INACTIVE"
+  }
+]

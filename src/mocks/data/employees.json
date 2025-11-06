@@ -1,0 +1,38 @@
+[
+  {
+    "id": "emp-001",
+    "firstName": "Avery",
+    "lastName": "Johnson",
+    "email": "avery.johnson@autoops.test",
+    "phone": "+1 212-555-0123",
+    "role": "ADMIN",
+    "branches": [{ "id": "br-nyc", "name": "Midtown Service Hub" }],
+    "status": "ACTIVE",
+    "createdAt": "2024-01-12T09:30:00.000Z"
+  },
+  {
+    "id": "emp-002",
+    "firstName": "Morgan",
+    "lastName": "Lee",
+    "email": "morgan.lee@autoops.test",
+    "phone": "+1 212-555-0456",
+    "role": "MANAGER",
+    "branches": [
+      { "id": "br-nyc", "name": "Midtown Service Hub" },
+      { "id": "br-nwk", "name": "Newark Logistics" }
+    ],
+    "status": "ACTIVE",
+    "createdAt": "2024-02-04T15:12:00.000Z"
+  },
+  {
+    "id": "emp-003",
+    "firstName": "Jon",
+    "lastName": "Fernandez",
+    "email": "jon.fernandez@autoops.test",
+    "phone": "+1 973-555-0891",
+    "role": "TECHNICIAN",
+    "branches": [{ "id": "br-nyc", "name": "Midtown Service Hub" }],
+    "status": "ACTIVE",
+    "createdAt": "2024-03-18T10:02:00.000Z"
+  }
+]
