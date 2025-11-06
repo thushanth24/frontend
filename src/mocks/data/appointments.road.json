@@ -1,0 +1,27 @@
+[
+  {
+    "id": "appt-r-7001",
+    "ticketNo": "RD-7001",
+    "type": "ROAD",
+    "location": { "lat": 40.7421, "lng": -73.9896, "address": "7th Ave & W 29th St, New York" },
+    "issueType": "Won't start",
+    "vehicle": {
+      "id": "veh-001",
+      "customerId": "cust-001",
+      "make": "Tesla",
+      "model": "Model 3",
+      "year": 2022,
+      "plate": "EV-2022",
+      "vin": "5YJ3E1EA7KF317000",
+      "mileageHistory": [
+        { "at": "2024-03-01T00:00:00.000Z", "value": 15200 },
+        { "at": "2024-01-10T00:00:00.000Z", "value": 13650 }
+      ]
+    },
+    "customer": { "id": "cust-001", "name": "Jordan Miles", "phone": "+1 212-555-0789", "email": "jordan.miles@example.com" },
+    "assignedTech": { "id": "tech-riley", "name": "Riley Chen" },
+    "status": "EN_ROUTE",
+    "photos": [],
+    "createdAt": "2024-04-04T11:45:00.000Z"
+  }
+]

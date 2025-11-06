@@ -1,0 +1,37 @@
+[
+  {
+    "id": "inv-9001",
+    "invoiceNo": "INV-9001",
+    "appointmentId": "appt-s-1002",
+    "customer": {
+      "id": "cust-002",
+      "name": "Nia Patel",
+      "phone": "+1 973-555-2211",
+      "email": "nia.patel@example.com",
+      "address": "88 Raymond Blvd, Newark, NJ",
+      "preferredContact": "PHONE"
+    },
+    "vehicle": {
+      "id": "veh-002",
+      "customerId": "cust-002",
+      "make": "Ford",
+      "model": "F-150",
+      "year": 2019,
+      "plate": "TRK-8841",
+      "vin": "1FTEW1E43KKE12345",
+      "mileageHistory": [
+        { "at": "2024-02-20T00:00:00.000Z", "value": 48800 },
+        { "at": "2023-11-11T00:00:00.000Z", "value": 45210 }
+      ]
+    },
+    "items": [
+      { "kind": "LABOR", "refId": "srv-brake", "name": "Brake Pad Replacement", "qty": 1, "unitPrice": 260, "total": 260 },
+      { "kind": "PART", "refId": "prd-brake-pad", "name": "Premium Brake Pad Set", "qty": 1, "unitPrice": 145, "total": 145 }
+    ],
+    "tax": 28.35,
+    "discount": 20,
+    "total": 413.35,
+    "status": "READY",
+    "createdAt": "2024-04-03T18:45:00.000Z"
+  }
+]
