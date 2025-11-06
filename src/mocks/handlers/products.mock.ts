@@ -3,7 +3,12 @@ import { Product } from '@/domain';
 import { paginate, PaginatedResponse } from '@/lib/pagination';
 import { maybeThrow, simulateDelay } from './utils';
 
-let products: Product[] = [...productsJson];
+const productSeed = productsJson as unknown as Array<Product & { status: string }>;
+
+let products: Product[] = productSeed.map((product) => ({
+  ...product,
+  status: product.status as Product['status']
+}));
 
 type ListParams = {
   search?: string;

@@ -3,7 +3,12 @@ import { Invoice } from '@/domain';
 import { paginate, PaginatedResponse } from '@/lib/pagination';
 import { maybeThrow, simulateDelay } from './utils';
 
-let invoices: Invoice[] = [...invoicesJson];
+const invoiceSeed = invoicesJson as unknown as Array<Invoice & { status: string }>;
+
+let invoices: Invoice[] = invoiceSeed.map((invoice) => ({
+  ...invoice,
+  status: invoice.status as Invoice['status']
+}));
 
 type ListParams = {
   status?: string;

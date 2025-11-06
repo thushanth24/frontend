@@ -7,3 +7,4 @@ export * from './invoice';
 export * from './technician';
 export * from './customer';
 export * from './vehicle';
+export * from './auth';

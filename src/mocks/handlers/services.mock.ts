@@ -3,7 +3,12 @@ import { ServiceItem } from '@/domain';
 import { paginate, PaginatedResponse } from '@/lib/pagination';
 import { maybeThrow, simulateDelay } from './utils';
 
-let services: ServiceItem[] = [...servicesJson];
+const servicesSeed = servicesJson as unknown as Array<ServiceItem & { status: string }>;
+
+let services: ServiceItem[] = servicesSeed.map((service) => ({
+  ...service,
+  status: service.status as ServiceItem['status']
+}));
 
 type ListParams = {
   search?: string;

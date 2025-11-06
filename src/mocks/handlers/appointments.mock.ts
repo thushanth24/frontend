@@ -4,8 +4,20 @@ import { RoadAppointment, ServiceAppointment } from '@/domain';
 import { paginate, PaginatedResponse } from '@/lib/pagination';
 import { maybeThrow, simulateDelay } from './utils';
 
-let serviceAppointments: ServiceAppointment[] = [...serviceAppointmentsJson];
-let roadAppointments: RoadAppointment[] = [...roadAppointmentsJson];
+const serviceAppointmentsSeed = serviceAppointmentsJson as unknown as ServiceAppointment[];
+const roadAppointmentsSeed = roadAppointmentsJson as unknown as RoadAppointment[];
+
+let serviceAppointments: ServiceAppointment[] = serviceAppointmentsSeed.map((appointment) => ({
+  ...appointment,
+  type: 'SERVICE',
+  status: appointment.status as ServiceAppointment['status']
+}));
+
+let roadAppointments: RoadAppointment[] = roadAppointmentsSeed.map((appointment) => ({
+  ...appointment,
+  type: 'ROAD',
+  status: appointment.status as RoadAppointment['status']
+}));
 
 type ListParams = {
   status?: string;

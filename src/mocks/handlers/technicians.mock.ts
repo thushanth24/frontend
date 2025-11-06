@@ -3,7 +3,12 @@ import { Technician } from '@/domain';
 import { paginate, PaginatedResponse } from '@/lib/pagination';
 import { maybeThrow, simulateDelay } from './utils';
 
-let technicians: Technician[] = [...techniciansJson];
+const technicianSeed = techniciansJson as unknown as Array<Technician & { status: string }>;
+
+let technicians: Technician[] = technicianSeed.map((tech) => ({
+  ...tech,
+  status: tech.status as Technician['status']
+}));
 
 type ListParams = {
   search?: string;

@@ -3,7 +3,13 @@ import { Branch } from '@/domain';
 import { paginate, PaginatedResponse } from '@/lib/pagination';
 import { maybeThrow, simulateDelay } from './utils';
 
-let branches: Branch[] = [...branchesJson];
+const branchSeed = branchesJson as unknown as Array<Branch & { status: string }>;
+
+let branches: Branch[] = branchSeed.map((branch) => ({
+  ...branch,
+  status: branch.status as Branch['status'],
+  manager: branch.manager ? { ...branch.manager } : null
+}));
 
 type ListParams = {
   search?: string;

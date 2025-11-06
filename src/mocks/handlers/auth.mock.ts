@@ -1,7 +1,9 @@
 import employeesJson from '@/mocks/data/employees.json';
+import { LoginResponse } from '@/domain';
+import { Role } from '@/config/roles';
 import { maybeThrow, simulateDelay } from './utils';
 
-export async function login({ email }: { email: string; password: string }) {
+export async function login({ email }: { email: string; password: string }): Promise<LoginResponse> {
   await simulateDelay();
   maybeThrow();
 
@@ -21,8 +23,11 @@ export async function login({ email }: { email: string; password: string }) {
     user: {
       id: match.id,
       name: `${match.firstName} ${match.lastName}`,
-      role: match.role,
-      branches: match.branches
+      role: match.role as Role,
+      branches: match.branches.map((branch) => ({
+        id: branch.id,
+        name: branch.name
+      }))
     }
   };
 }

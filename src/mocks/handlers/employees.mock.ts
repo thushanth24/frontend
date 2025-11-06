@@ -1,9 +1,20 @@
 import employeesJson from '@/mocks/data/employees.json';
 import { Employee, EmployeePayload } from '@/domain';
+import { Role } from '@/config/roles';
 import { paginate, PaginatedResponse } from '@/lib/pagination';
 import { maybeThrow, simulateDelay } from './utils';
 
-let employees: Employee[] = [...employeesJson];
+const employeeSeed = employeesJson as unknown as Array<Employee & { status: string; role: string }>;
+
+let employees: Employee[] = employeeSeed.map((employee) => ({
+  ...employee,
+  role: employee.role as Role,
+  status: employee.status as Employee['status'],
+  branches: employee.branches.map((branch) => ({
+    id: branch.id,
+    name: branch.name
+  }))
+}));
 
 type ListParams = {
   search?: string;
